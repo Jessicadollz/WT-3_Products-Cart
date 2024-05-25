@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: red; 
+    background-image: linear-gradient(rgb(26, 95, 105), black); 
+    font-family: "Roboto Mono", monospace;
+}
+
+.flex-container {
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+.flex-container > section {
+   /* background-color: whitesmoke; */
+    background-image: linear-gradient(rgb(76, 131, 140), whitesmoke); 
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border-radius: 5%; 
+} 
+
+button {
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#cart {
+    margin-top: 20px;
+}
+
+#cart-list, #total-price {
+    margin-top: 10px;
+} 
+
+@media (max-width: 500px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
